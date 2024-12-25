@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>表格-PPT助手使用说明</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h2>表格</h2>
+        <p>Ribbon菜单<strong>PPT助手</strong>中如下图所示部分可对PPT表格对象进行操作。</p>
+        <img alt="" src="images/03001.png" />
+        <h4 id="TableSplit">表格拆分</h4>
+        <p>本功能的应用场景为，当需要展示一张超过页面高度的表格时，可以通过本功能，将表格拆分到多张幻灯片内。拆分前可先统一设置好表格的样式字体，拆分后仍然保持表格的样式字体。</p>
+        <img alt="" src="images/03002.png" />
+        <p>分两种模式进行表格拆分：一为按固定行数（不含标题栏）；二为按最大表格高度（含标题栏）。如表格存在标题行，则默认在每个拆分的表格中保留标题行。</p>
+        <div class="remark">
+            <p><strong>表格拆分功能的特别说明：</strong></p>
+            <ol>
+                <li>对于存在列向合并的表格，需要注意拆分后的合并位置的单元格内容是否缺失；</li>
+                <li>程序总会在表格所在幻灯片之前新建页面存放拆分的表格，并不会删除源表格；</li>
+                <li>当设置为高度拆分时，高度将为一个上限值，程序保证每个拆分的表格高度不超过设置值。</li>
+            </ol>
+        </div>
+        <h4>首列编号</h4>
+        <p>本功能应用场景为，当新建表格需要再首列填充序号时。如果没有设置标题行时，序号将从第一行填充，并且从1开始。当设置标题行时，将掠过标题行。当开始编号的第一行第一个单元格存在内容，且内容可以为识别的阿拉伯数字时，后续编号将接续编号。当首列存在内容时，此功能将用编号覆盖内容。</p>
+        <h4>单倍无缩进</h4>
+        <p>本功能应用场景为，从外部复制而来的表格，存在行距偏大，缩进不一，不美观时，一键移除内容缩进以及过大的行距。</p>
+        <br>
+        <a href="index.html">返回首页</a>
+    </body>
+</html>
