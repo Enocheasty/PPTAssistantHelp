@@ -6,6 +6,23 @@
         <title>样式-PPT助手使用说明</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="main.css">
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                font-family: Consolas,"宋体", sans-serif;
+                font-size: 18px;
+                margin: 20px auto;
+                table-layout: fixed; 
+            }
+            td {
+                width: 4%;
+                border: 1px solid #444;
+                padding: 4px 6px;
+                text-align: center;
+                white-space: nowrap;
+            }
+        </style>
     </head>
     <body>
         <h2>样式</h2>
@@ -84,18 +101,33 @@
             </ol>
         </div>
         <h4 id="TextFormatting">文本格式</h4>
-        <p>本功能主要为便捷、批量设置一些文本的格式。目前包含上下标设置以及添加括号引用标点符号两项功能。</p>
+        <p>本功能主要为便捷、批量设置一些文本的格式。目前包含：删除空格、删除空行、上下标设置、添加括号引用标点符号、首行缩进设置以及符号全半角转换功能。</p>
         <img class="leftImg" alt="" src="images/01006.png" />
+        <p><strong>删除空格</strong>，可以删除除英文字母之间的空格以外的所有空格。对于英文字母之间的空格，可能为正常的单词分隔，但不识别不正常的英文字母之间空格，例如：PowerP oint，尽管此处空格不合理，但程序不会检查单词分隔是否正确，仍然会保留此空格。</p>
+        <p><strong>删除空行</strong>，可以删除所选范围或对象文本内容中的空行。所谓的空行指只包含空格的行，一般以回车符/r结束。</p>
         <p><strong>上下标格式</strong>，可以将选定图形内的文本中指定的文字设定为上标格式或者下标格式。对于平方上标、立方上标格式，程序自动匹配m或M字符之后的2或者3字符，将其设定为上标，例如：mm2，m2，cm3，km3之后的数字；而数字上标或者数字下标，则对于所有的数字字符生效。如果需要更多样的设置，可以使用自定义上下标功能，将调出自定义上下标窗口，支持正则表达式匹配。</p>
-        <p>注意：上下标格式针对对象操作，使用时选择一个或多个对象，程序匹配对象中的文本内容进行批量操作。处于文本选择状态时，功能不生效。</p>
+        <img alt="" src="images/01007.png" />
         <p><strong>括号引用</strong>，内置20种括号或者引用符号，当选中一段文本时，使用该功能，自动在选中文本的前后添加此引用符号。</p>
-        <p>注意：括号引用功能针对文本选择状态生效。</p>
+        <p><strong>首行缩进</strong>，可以将所选对象的各个段落设置为首行缩进2字符，以汉字文本宽度和字高为单位，当字体调整或者文字高度修改后，需重新运用功能调整。同时也可以移除首行缩进。</p>
+        <p><strong>字符全半角转换</strong>，主要用于特殊符号以及标点符号的全半角之间的转换，用于文本对齐。全半角对应关系如下表：</p>
+        <table>
+          <tr>
+            <td>~</td><td>!</td><td>@</td><td>#</td><td>$</td><td>%</td><td>&</td><td>*</td><td>(</td><td>)</td>
+            <td>-</td><td>+</td><td>=</td><td>[</td><td>]</td><td>{</td><td>}</td><td>\</td><td>/</td>
+            <td>&lt;</td><td>&gt;</td><td>:</td><td>;</td><td>.</td><td>?</td>
+          </tr>
+          <tr>
+            <td>～</td><td>！</td><td>＠</td><td>＃</td><td>￥</td><td>％</td><td>＆</td><td>＊</td><td>（</td><td>）</td>
+            <td>－</td><td>＋</td><td>＝</td><td>【</td><td>】</td><td>｛</td><td>｝</td><td>、</td><td>／</td>
+            <td>《</td><td>》</td><td>：</td><td>；</td><td>。</td><td>？</td>
+          </tr>
+        </table>
         <div class="remark">
             <p><strong>文本格式说明：</strong></p>
             <ol>
                 <li>每次开启PPT未使用任何文本操作功能时，Ribbon界面的文本功能按钮不执行任何操作，请单击下箭头选择操作功能之一。之后Ribbon界面将设定为此功能，后续可以直接单击Ribbon界面执行此功能；</li>
                 <li>Ribbon界面的按钮功能将随上一次有效的文本格式功能选择而改变；</li>
-                <li>注意使用功能时的选择状态，选择状态不正确，功能将不会生效，但仍然更改Ribbon快捷按钮为上次操作。</li>
+                <li>文本功能有的可以支持单选或多选文本框、选择一段文本、表格选择或者表格单元格选择，有的功能只支持文本选择后执行。当选择状态不正确，功能将不会生效，但仍然更改Ribbon快捷按钮为上次操作。</li>
             </ol>
         </div>
         <br>
